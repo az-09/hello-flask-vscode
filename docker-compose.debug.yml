@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  hello-flask-vscode:
+    image: hello-flask-vscode
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 5000:5000
